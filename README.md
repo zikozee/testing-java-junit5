@@ -11,8 +11,4 @@ This source code repository contains JUnit 5 test examples with Maven.
 
 ## Support
 For questions and help:
-* Please post in course
-* Or post in the Slack Community exclusive to the course.
-
-GitHub Issues will not be addressed.
-"# testing-java-junit5" 
+* contact me at ezekiel.eromosei@gmail.com
