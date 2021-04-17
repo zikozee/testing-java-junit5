@@ -2,6 +2,10 @@ package com.zikozee.sfgpetclinic.model;
 
 import org.junit.jupiter.api.Test;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.endsWith;
+import static org.hamcrest.Matchers.startsWith;
+import static org.hamcrest.core.Is.is;
 import static org.junit.jupiter.api.Assertions.*;
 
 class OwnerTest {
@@ -21,5 +25,10 @@ class OwnerTest {
                         () -> assertEquals("Key West", owner.getCity(), "City Did not Match"),
                         () -> assertEquals("07066616366", owner.getTelephone()))
         );
+
+        //HAMCREST
+        assertThat(owner.getCity(), is("Key West"));
+        assertThat(owner.getCity(), endsWith("West"));
+        assertThat(owner.getCity(), startsWith("Ke"));
     }
 }
