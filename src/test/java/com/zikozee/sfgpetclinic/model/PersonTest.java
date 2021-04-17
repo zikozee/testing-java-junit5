@@ -46,5 +46,9 @@ class PersonTest {
 
         assertThat(person1).matches(person -> person.getFirstName().equals("Ziko") && person.getLastName().equals("Zee"));
         assertThat(persons).isNotEmpty();
+
+        assertThat(persons).filteredOn(person -> !person.getFirstName().equals("bee"))
+                .filteredOn(person -> person.getFirstName().length() > 3)
+                .first().isInstanceOf(Person.class);
     }
 }
