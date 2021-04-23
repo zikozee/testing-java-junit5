@@ -27,9 +27,11 @@ class OwnerTest implements ModelTests {
                         () -> assertEquals("07066616366", owner.getTelephone()))
         );
 
+        assertAll("HAMCREST TESTS",
         //HAMCREST
-        assertThat(owner.getCity(), is("Key West"));
-        assertThat(owner.getCity(), endsWith("West"));
-        assertThat(owner.getCity(), startsWith("Ke"));
+                () -> assertThat(owner.getCity(), is("Key West")),
+                () -> assertThat(owner.getCity(), endsWith("West")),
+                () -> assertThat(owner.getCity(), startsWith("Ke"))
+        );
     }
 }

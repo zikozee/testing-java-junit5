@@ -24,7 +24,7 @@ class VetControllerTest implements ControllerTests {
 
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
         specialtyService = new SpecialityMapService();
         vetService = new VetMapService(specialtyService);
         vetController = new VetController(vetService);

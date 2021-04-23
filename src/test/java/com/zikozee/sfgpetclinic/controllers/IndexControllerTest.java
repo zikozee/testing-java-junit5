@@ -15,7 +15,7 @@ class IndexControllerTest implements ControllerTests {
     IndexController controller;
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
         controller = new IndexController();
     }
 
