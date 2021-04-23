@@ -1,9 +1,7 @@
 package com.zikozee.sfgpetclinic.model;
 
 import com.zikozee.sfgpetclinic.ModelTests;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.RepeatedTest;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -59,8 +57,14 @@ class PersonTest implements ModelTests {
 //    @RepeatedTest(value = 10, name = "{displayName} : {currentRepetition} - {totalRepetitions}")
     @RepeatedTest(value = 10, name = RepeatedTest.LONG_DISPLAY_NAME)
     @DisplayName("My Repeated Test")
-    @Test
     void myRepeatedTests() {
       //todo - impl
+    }
+
+    @RepeatedTest(5)
+    void myRepeatedTestWithDI(TestInfo testInfo, RepetitionInfo repetitionInfo) {
+
+        System.out.println(testInfo.getDisplayName() + ": " + repetitionInfo.getCurrentRepetition());
+
     }
 }
