@@ -1,5 +1,6 @@
 package com.zikozee.sfgpetclinic.controllers;
 
+import com.zikozee.sfgpetclinic.ControllerTests;
 import com.zikozee.sfgpetclinic.fauxspring.Model;
 import com.zikozee.sfgpetclinic.fauxspring.ModelMapImpl;
 import com.zikozee.sfgpetclinic.model.Vet;
@@ -8,16 +9,13 @@ import com.zikozee.sfgpetclinic.services.VetService;
 import com.zikozee.sfgpetclinic.services.map.SpecialityMapService;
 import com.zikozee.sfgpetclinic.services.map.VetMapService;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
-@Tag("controllers")
-class VetControllerTest {
+class VetControllerTest implements ControllerTests {
 
     VetService vetService;
     SpecialtyService specialtyService;
@@ -26,7 +24,7 @@ class VetControllerTest {
 
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         specialtyService = new SpecialityMapService();
         vetService = new VetMapService(specialtyService);
         vetController = new VetController(vetService);
