@@ -121,6 +121,15 @@
                         --illegal-access=permit
                     </argLine>
                 </configuration>
+                <!--FOR INTEGRATION TEST TO RUN-->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
