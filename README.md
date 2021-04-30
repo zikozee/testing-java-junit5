@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/com.zikozee/testing-java-junit5-.svg?style=svg)](https://github.com/zikozee/testing-java-junit5)
+[![CircleCI](https://circleci.com/gh/zikozee/testing-java-junit5.svg?style=svg)](https://github.com/zikozee/testing-java-junit5)
 
 # Introduction to JUnit 5 with Maven
 
