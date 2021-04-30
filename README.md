@@ -1,6 +1,6 @@
-# Introduction to JUnit 5 with Maven
+[![CircleCI](https://circleci.com/gh/com.zikozee/testing-java-junit5-.svg?style=svg)](https://github.com/zikozee/testing-java-junit5)
 
-All source code examples in the repository are for my [Online Course - Testing Spring Beginner to Guru](https://www.udemy.com/testing-spring-boot-beginner-to-guru/?couponCode=GITHUB_REPO)
+# Introduction to JUnit 5 with Maven
 
 This source code repository contains JUnit 5 test examples with Maven.
 
