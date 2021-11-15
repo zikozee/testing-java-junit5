@@ -30,6 +30,7 @@ class OwnerSDJpaServiceTest {
 
     @Test
     void findAll() {
+        assertEquals("jvm", "jvm");
     }
 
     @Test
