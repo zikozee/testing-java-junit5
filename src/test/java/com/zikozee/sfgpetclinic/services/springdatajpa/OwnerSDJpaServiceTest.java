@@ -25,6 +25,7 @@ class OwnerSDJpaServiceTest {
 
     @Test
     void findAllByLastNameLike() {
+        assertNotEquals("jvm", "jre");
     }
 
     @Test
